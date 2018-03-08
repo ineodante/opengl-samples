@@ -12,4 +12,12 @@ OpenGL Samples
         <li>GLEW library is included</li>
       </ul>
     </li>
+    <li>
+        <h4>OpenGL-002-BasicTriangleWithShaders</h4>
+        <ul>
+            <li>Basic Triangle with VAO and VBO</li>
+            <li>Vertex Shader Sample for position</li>
+            <li>Fragment Shader Sample for Color</li>
+        </ul>
+    </li>
 </ol>
