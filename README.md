@@ -20,4 +20,29 @@ OpenGL Samples
             <li>Fragment Shader Sample for Color</li>
         </ul>
     </li>
+    <li>
+        <h4>OpenGL-003-CameraView</h4>
+        <ul>
+            <li>Basic Triangle</li>
+            <li>Camera View implemented using glm library</li>
+            <li>Vertex Shader Uniforms implementation</li>
+        </ul>
+    </li>
+    <li>
+        <h4>OpenGL-004-MultiTriangle</li>
+        <ul>
+            <li>Multiple triangles implemented using multiple VAO and VBO</li>
+            <li>Individual VBO containing Position and Color Information</li>
+            <li>Camera Implementation using GLM Library Perspective Mode</li>
+        </ul>
+    </li>
+    <li>
+        <h4>OpenGL-005-ColoredCube</li>
+        <ul>
+            <li>Cube Rendered using individual VBO linked with VAO</li>
+            <li>One VBO for Vertex Positions and another for Color information</li>
+            <li>Z-Buffer implementation using GL_DEPTH_TEST</li>
+            <li>GL_LESS to implement near object view and far object clipping</li>
+        </ul>
+    </li>
 </ol>
