@@ -45,4 +45,13 @@ OpenGL Samples
             <li>GL_LESS to implement near object view and far object clipping</li>
         </ul>
     </li>
+    <li>
+        <h4>OpenGL-006-TexturedTriangle</h4>
+        <ul>
+            <li>Multiple Triangles generated with VAO and VBO</li>
+            <li>Texture loaded with STB_IMAGE</li>
+            <li>Uniforms used to assign texture and mix vertex colors with Texture</li>
+            <li>GL_DEPTH_TEST and GL_LESS to implement Z Buffer</li>
+        </ul>
+    </li>
 </ol>
