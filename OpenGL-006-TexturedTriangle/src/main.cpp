@@ -85,7 +85,7 @@ int main(){
 
 
 	glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)800/(float)600, 0.1f, 100.0f);
-	glm::mat4 view = glm::lookAt(glm::vec3(2,1,-5), glm::vec3(0,0,0), glm::vec3(0,1,0));
+	glm::mat4 view = glm::lookAt(glm::vec3(2,1,5), glm::vec3(0,0,0), glm::vec3(0,1,0));
 	glm::mat4 model = glm::mat4(1.0f);
 
 	glm::mat4 mvp = projection * view * model;
@@ -107,7 +107,7 @@ int main(){
 		glUseProgram(shaderProgram);
 		glUniformMatrix4fv(mvpId,1,GL_FALSE,&mvp[0][0]);
 		float timeValue= glfwGetTime();
-		float colorVal = abs(10 * sin(timeValue));
+		float colorVal = abs(5 * sin(10 * timeValue));
 		glUniform1i(colorIntensity,colorVal);
 		glBindVertexArray(triangle1);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
@@ -137,8 +137,9 @@ void glfw_key_callback(GLFWwindow* window,int key,int scancode,int action,int mo
 			if(fullscreen){
 				glfwSetWindowMonitor(window,monitor,0,0,800,600,60);
 			}else{
-				glfwSetWindowMonitor(window,NULL,0,0,800,600,60);
+				glfwSetWindowMonitor(window,nullptr,0,0,800,600,60);
 			}
+			glViewport(0, 0, 800,600);
 			break;
 		default:
 			break;

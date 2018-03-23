@@ -11,6 +11,10 @@ out vec3 vColor;
 out vec2 texCoord;
 void main(){
 	gl_Position = MVP * vec4(position,1.0f);
-	vColor = color * colorVal;
+	
+	vColor = vec3(1.0f,1.0f,1.0f);
+	if( colorVal > 1)
+		vColor = color * colorVal;
+			
 	texCoord = uv;
 }
