@@ -98,7 +98,9 @@ int main(int argc,char** argv){
 
 	glfwSetKeyCallback(window, glfw_key_callback);
 	while(!glfwWindowShouldClose(window)){
-		glClear(GL_COLOR_BUFFER_BIT);
+		glEnable(GL_DEPTH_TEST);
+		glDepthFunc(GL_LESS);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glClearColor(0.2f,0.3f,0.3f,1.0f);
 		glPolygonMode(GL_FRONT_AND_BACK,GL_FILL);
 		glUseProgram(shaderProgram);
