@@ -71,7 +71,7 @@ int main(){
 
 	naveen::Model objModel;
 	ModelLoader modelLoader;
-	modelLoader.loadObjFile("src/models/cube2.obj", objModel);
+	modelLoader.loadObjFile("src/models/sphere.obj", objModel);
 
 	cout << objModel.vertices.size() << endl;
 	cout << sizeof(glm::vec3)<< endl;
@@ -153,7 +153,7 @@ void glfw_error_callback(int errorCode,const char* message){
 	cout <<"Error Code: " << errorCode << ": " << message << endl;
 }
 
-void glfw_key_callback(GLFWwindow* window,int key,int scancode,int action,int mods){
+void glfw_key_callback(GLFWwindow* window,int key,int scancode,int action,inglEnableVertexAttribArray(1);t mods){
 	if(action == GLFW_PRESS){
 		switch(key){
 		case GLFW_KEY_ESCAPE:
