@@ -54,4 +54,30 @@ OpenGL Samples
             <li>GL_DEPTH_TEST and GL_LESS to implement Z Buffer</li>
         </ul>
     </li>
+    <li>
+        <h4>OpenGL-007-EBO-CUBE</h4>
+        <ul>
+            <li>Element Buffer Object used to improve the performance of model loading</li>
+        </ul>
+    </li>
+    <li>
+        <h4>OpenGL-008-OBJ-Parser</h4>
+        <ul>
+            <li>Wavefront OBJ File Format custom parser to load wavefront obj files</li>
+            <li>Only Vertices and Indices reading to implement via VBO and EBO </li>
+            <li>Sample doesn't contain texture coordinates implementation</li>
+        </ul>
+    </li>
+    <li>
+        <h4>OpenGL-009-Camera-Rotation</h4>
+        <ul>
+            <li>Change of MVP Matrices at runtime to implement circular hover of the camera around the objects</li>
+        </ul>
+    </li>
+    <li>
+        <h4>OpenGL-010-FirstPersonCamera</h4>
+        <ul>
+            <li>Camera implemented in FPS Style with WASD Controls</li>
+        </ul>
+    </li>
 </ol>
